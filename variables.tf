@@ -2,11 +2,13 @@
  * Required variables
  */
 variable "app_name" {
-  type = string
+  description = "Short app name used in the name of managed resources"
+  type        = string
 }
 
 variable "app_env" {
-  type = string
+  description = "Environment name used in the name of managed resources, e.g. prod, stg"
+  type        = string
 }
 
 variable "source_arns" {
@@ -19,8 +21,9 @@ variable "source_arns" {
  * Optional variables
  */
 
-variable "backup_cron_schedule" {
-  default = "11 1 * * ? *" # Every day at 01:11 UTC
+variable "backup_schedule" {
+  description = "Backup schedule in AWS Cloudwatch Event Bridge format, e.g.\"cron(11 1 * * ? *)\""
+  default     = "cron(11 1 * * ? *)" # Every day at 01:11 UTC
 }
 
 variable "notification_events" {
