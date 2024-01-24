@@ -28,8 +28,6 @@ This module is used to create scheduled backups of AWS RDS databases.
 - `bkup_key_id` - The backup key ID
 - `bkup_key_arn` - The backup key ARN
 - `bkup_vault_arn` - The backup vault ARN
-- `bkup_cron_scheduled` - The cron schedule for making backups
-- `sns_notification_events` - The events that trigger SNS notifications
 
 ## Example Usage
 
