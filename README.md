@@ -1,3 +1,7 @@
+# Deprecation Notice
+
+This repository is archived. Please use [terraform-aws-backup](https://github.com/silinternational/terraform-aws-backup) instead. See [Terraform Registry](https://registry.terraform.io/modules/silinternational/backup/aws/latest) for more details.
+
 # terraform-aws-backup-rds
 
 This module is used to create scheduled backups of AWS RDS databases.
